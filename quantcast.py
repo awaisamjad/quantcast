@@ -22,7 +22,7 @@ def sort_data_as_date_to_cookies(data: str) -> dict[str, list]:
     
     #~ Iterate over the data_split list starting from the second element as this removes the header
     #TODO
-    #! Another approach -> The header might have/should to be removed at the start via data_split.pop(0)
+    #! Another approach -> The header might/should have to be removed at the start via data_split.pop(0)
     
     for i in range(1, len(data_split)): 
         
@@ -115,5 +115,4 @@ def main(filename: str, date: str):
         print_most_active_cookies(most_active_cookies)
 
 if __name__ == "__main__":
-    # main()
-    print(sort_data_as_date_to_cookies(load_cookie_log_file("cookie_log.csv")))
+    main()
